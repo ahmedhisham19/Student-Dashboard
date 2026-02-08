@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <img src="../images/Logo.jfif" width="100" height="55" alt="Academy Logo">
+        <h1>Academy</h1>
+        <span>
+                Student Name 
+                <a href="">  <!-- clicking on profile photo redirect to profile editing page -->
+                    <img src="../images/profile icon2.jpg" width="50" height="50" alt="profile photo"> 
+                </a>
+        </span>
+    </header>
+    <br><br><br>
+
+    <aside>
+        <ul>     
+            <li class="home">
+                <a href=""> Home </a>
+                <ul>
+                    <li><a href="#study-plan">Schedule</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#current-lec">Current Lecture</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </li>
+            <li><a href=""> Study Schedule </a></li>
+            <li><a href=""> Exams </a></li>
+            <li><a href=""> Digital Library </a></li>
+        </ul>
+    </aside>
+
+    <br><br><br>
+
+    <main>
+        <section id="study-plan">
+            <h2>Schedule</h2>
+            <table border="3">
+                <thead>
+                    <tr>
+                        <th>DAY</th>
+                        <th>Physics</th>
+                        <th>Mathematics</th>
+                        <th>Chemistry</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>SAT</b></td>
+                        <td>time/online</td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                    </tr>
+                    <tr>
+                        <td><b>SUN</b></td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                    </tr>
+                    <tr>
+                        <td><b>MON</b></td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                    </tr>
+                    <tr>
+                        <td><b>TUES</b></td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                    </tr>
+                    <tr>
+                        <td><b>WEDNES</b></td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                    </tr>
+                    <tr>
+                        <td><b>THURS</b></td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                    </tr>
+                    <tr>
+                        <td><b>FRI</b></td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                        <td>-/-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    <br><br><br>
+
+        <section id="statistics">
+            <h2>Student Statistics</h2>
+            <table border="5">
+                <thead>
+                    <tr>
+                        <th>Total Study Hours</th>
+                        <th>Completed Lessons</th>
+                        <th>Attendance Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>- %</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    <br><br><br>
+
+        <section id="current-lec">
+            <h2>latest Lecture</h2>
+            <article>
+                <section>
+                    <h3>Lecture Title</h3>
+                    <video controls width="50%" height="400">
+                        <source src="../videos/GMT20251215-165500_Recording_1920x1080.mp4 [1xtghtXFY8t9eblQP7UiywoTgOlSGqVtS].mp4" type="video/mp4">
+                        <i>Your browser does not support videos, please use another browser</i>
+                    </video>
+                </section>
+                <section>
+                    <h3>About Lecture</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero impedit amet rerum cum eos? Omnis illo quod maxime nemo. Deserunt qui debitis eveniet similique maxime voluptates officiis enim perspiciatis iste magnam, dolores vel placeat, corrupti, quasi saepe neque eligendi?</p>
+                    <a href="../PDF/DSP Lecture 1.pdf" download>Download Lecture PDF</a>
+                </section>
+            </article>
+        </section>
+
+    <br><br><br>
+
+    <section id="support">
+        <h2>Support Form</h2>
+        <form action="https://www.example.com">
+            <label for="question-type"><b>Question Type</b></label><br>
+            <select name="question-type" id="question-type" required >
+                <option value="" disabled selected>-------------------</option>
+                <option value="scientific">Scientific</option>
+                <option value="administrative">Administrative</option>
+            </select>
+            <br><br>
+            <label for="question"><b>Write Your Question </b></label><br>
+            <textarea name="question" id="question" rows="7" cols="40" placeholder="write Here ..." required></textarea>
+            <br><br>
+            <label for="file-image"></label>
+            <label for="file-image"><b>Upload Question Image</b></label><br><br>
+            <input type="file" name="file-image" id="file-image" title="Upload Your Question"><br><br><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    </main>
+
+    <br><br><br>
+
+    <footer>
+        <section>
+            <h2>FOLLOW US</h2>
+            <p>
+                Our page on facebook <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"> https://www.facebook.com </a>
+                <br>
+                Youtue Channel <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"> https://www.youtube.com </a>
+            </p>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <address>
+                <a href="mailto:ahmedhisham19646@gmail.com" target="_blank" rel="noopener noreferrer">ِAcademy Gmail</a>
+                <p>13 شارع عباس العقاد يجوار كشرى الغباشى </p>
+            </address>
+        </section>
+        <p>&copy;All rights reserved Academy 2026</p>
+    </footer>
+</body>
+</html>
