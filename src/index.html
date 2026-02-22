@@ -3,44 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Home</title>
 </head>
 <body>
-    <header>
-        <img src="../images/Logo.jfif" width="100" height="55" alt="Academy Logo">
-        <h1>Academy</h1>
-        <span>
+    <header class="header">
+        <div class="logo-name">
+            <img src="../images/Logo.jfif" width="100" height="55" alt="Academy Logo">
+            <h1>Academy</h1>
+        </div>
+        <div class="st-name-photo">
+            <span id="st-name">
                 Student Name 
-                <a href="">  <!-- clicking on profile photo redirect to profile editing page -->
-                    <img src="../images/profile icon2.jpg" width="50" height="50" alt="profile photo"> 
-                </a>
-        </span>
+            </span>
+            <a href="">  <!-- clicking on profile photo redirect to profile editing page -->
+                <img id="st-photo" src="../images/profile icon2.jpg" alt="profile photo" width="50" height="50"> 
+            </a>
+        </div>
     </header>
-    <br><br><br>
 
-    <aside>
+    <aside class="side-bar">
         <ul>     
-            <li class="home">
+            <li class="home active">
                 <a href=""> Home </a>
-                <ul>
-                    <li><a href="#study-plan">Schedule</a></li>
-                    <li><a href="#statistics">Statistics</a></li>
-                    <li><a href="#current-lec">Current Lecture</a></li>
-                    <li><a href="#support">Support</a></li>
-                </ul>
             </li>
-            <li><a href=""> Study Schedule </a></li>
-            <li><a href=""> Exams </a></li>
-            <li><a href=""> Digital Library </a></li>
+                <li id="study-plan"><a href="#study-plan-sec">Schedule</a></li>
+                <li id="statistics"><a href="#statistics-sec">Statistics</a></li>
+                <li id="current-lec"><a href="#current-lec-sec">Current Lecture</a></li>
+                <li id="support"><a href="#support-sec">Support</a></li>
+            <li class="study-schedule">
+                <a href=""> Study Schedule </a>
+            </li>
+            <li class="exams">
+                <a href=""> Exams </a>
+            </li>
+            <li class="digital-library">
+                <a href=""> Digital Library </a>
+            </li>
         </ul>
     </aside>
 
-    <br><br><br>
-
-    <main>
-        <section id="study-plan">
+    <main class="main">
+        <section id="study-plan-sec">
             <h2>Schedule</h2>
-            <table border="3">
+            <table>
                 <thead>
                     <tr>
                         <th>DAY</th>
@@ -96,11 +102,9 @@
             </table>
         </section>
 
-    <br><br><br>
-
-        <section id="statistics">
+        <section id="statistics-sec">
             <h2>Student Statistics</h2>
-            <table border="5">
+            <table border="2">
                 <thead>
                     <tr>
                         <th>Total Study Hours</th>
@@ -118,19 +122,17 @@
             </table>
         </section>
 
-    <br><br><br>
-
-        <section id="current-lec">
+        <section id="current-lec-sec">
             <h2>latest Lecture</h2>
             <article>
-                <section>
+                <section class="lec-video">
                     <h3>Lecture Title</h3>
-                    <video controls width="50%" height="400">
+                    <video controls>
                         <source src="../videos/GMT20251215-165500_Recording_1920x1080.mp4 [1xtghtXFY8t9eblQP7UiywoTgOlSGqVtS].mp4" type="video/mp4">
                         <i>Your browser does not support videos, please use another browser</i>
                     </video>
                 </section>
-                <section>
+                <section class="about-lec">
                     <h3>About Lecture</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem vero impedit amet rerum cum eos? Omnis illo quod maxime nemo. Deserunt qui debitis eveniet similique maxime voluptates officiis enim perspiciatis iste magnam, dolores vel placeat, corrupti, quasi saepe neque eligendi?</p>
                     <a href="../PDF/DSP Lecture 1.pdf" download>Download Lecture PDF</a>
@@ -138,49 +140,52 @@
             </article>
         </section>
 
-    <br><br><br>
-
-    <section id="support">
-        <h2>Support Form</h2>
-        <form action="https://www.example.com">
-            <label for="question-type"><b>Question Type</b></label><br>
-            <select name="question-type" id="question-type" required >
-                <option value="" disabled selected>-------------------</option>
-                <option value="scientific">Scientific</option>
-                <option value="administrative">Administrative</option>
-            </select>
-            <br><br>
-            <label for="question"><b>Write Your Question </b></label><br>
-            <textarea name="question" id="question" rows="7" cols="40" placeholder="write Here ..." required></textarea>
-            <br><br>
-            <label for="file-image"></label>
-            <label for="file-image"><b>Upload Question Image</b></label><br><br>
-            <input type="file" name="file-image" id="file-image" title="Upload Your Question"><br><br><br>
-            <input type="submit" value="Send">
-        </form>
-    </section>
-
+        <section id="support-sec">
+            <h2>Support Form</h2>
+            <form action="https://www.example.com">
+                <div class="q1">
+                    <label for="question-type"><b>Question Type</b></label>
+                    <select name="question-type" id="question-type" required >
+                        <option value="" disabled selected>-------------------</option>
+                        <option value="scientific">Scientific</option>
+                        <option value="administrative">Administrative</option>
+                    </select>
+                </div>
+                <div class="q2">
+                    <label for="question"><b>Write Your Question </b></label>
+                    <textarea name="question" id="question" rows="7" cols="40" placeholder="write Here ..." required></textarea>
+                </div>
+                <div class="q3">
+                    <label for="file-image"><b>Upload Question Image</b></label>
+                    <input type="file" name="file-image" id="file-image" title="Upload Your Question">
+                </div>
+                <div class="send">
+                    <input class="submit" type="submit" value="Send">
+                </div>
+            </form>
+        </section>
     </main>
 
-    <br><br><br>
-
-    <footer>
-        <section>
-            <h2>FOLLOW US</h2>
+    <footer class="footer">
+        <div>
+            <section class="follow-us">
+                <h2>FOLLOW US</h2>
+                <p>
+                    Our page on facebook : <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"> https://www.facebook.com </a>
+            </p>
             <p>
-                Our page on facebook <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"> https://www.facebook.com </a>
-                <br>
-                Youtue Channel <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"> https://www.youtube.com </a>
+                Youtue Channel : <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"> https://www.youtube.com </a>
             </p>
         </section>
-        <section>
+        <section class="contact-us">
             <h2>Contact Us</h2>
             <address>
                 <a href="mailto:ahmedhisham19646@gmail.com" target="_blank" rel="noopener noreferrer">ِAcademy Gmail</a>
                 <p>13 شارع عباس العقاد يجوار كشرى الغباشى </p>
             </address>
         </section>
-        <p>&copy;All rights reserved Academy 2026</p>
+        </div>
+        <p id="copyright">&copy;All rights reserved Academy 2026</p>
     </footer>
 </body>
 </html>
